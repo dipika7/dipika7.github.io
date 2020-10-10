@@ -17,8 +17,8 @@
 				"data": {"url": "data/building_inventory.csv"},
 				"mark": "circle",
 				"encoding": {
-					"x": {"field": "Year Acquired", "type": "quantitative"},
-					"y": {"field": "Year Constructed", "type": "quantitative"},
+					"x": {"field": "Congress Dist", "type": "quantitative"},
+					"y": {"aggregate":"sum","field": "Square Footage", "type": "quantitative"},
 				}
 			};
 			vegaEmbed('#vis', yourVlSpec);
