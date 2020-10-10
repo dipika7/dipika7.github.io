@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Embedding Vega-Lite</title>
+    <title>Data Visualization Assignment 4</title>
     <script src="https://cdn.jsdelivr.net/npm/vega@5.16.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.16.8"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
   </head>
   <body>
+	<center>
+	<h1>Year Acquired vs Year Constructed</h1>
     <div id="vis"></div>
-
     <script type="text/javascript">
 		var yourVlSpec =
 			{
@@ -22,6 +23,7 @@
 			};
 			vegaEmbed('#vis', yourVlSpec);
     </script>
+	</center>
   </body>
 </html>
 
