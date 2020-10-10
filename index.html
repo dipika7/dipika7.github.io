@@ -15,9 +15,9 @@
 			{
 				"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 				"data": {"url": "data/building_inventory.csv"},
-				"width": 700,
-				"height": 700,
-				"mark": "bar",
+				"width": 450,
+				"height": 450,
+				"mark": {"type": "bar", "binSpacing": 1},
 				"encoding": {
 					"x": {"field": "Congress Dist", "type": "quantitative"},
 					"y": {"aggregate":"sum","field": "Square Footage", "type": "quantitative"},
