@@ -1,1 +1,13 @@
-"Hello World" 
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {"url": "https://jupyterhub.ischool.illinois.edu/jupyter/hub/user-redirect/lab/tree/building_inventory.csv"},
+    "mark": "bar",
+    "encoding": {
+        "x": {"field": "Year Acquired", "type": "quantitative", "bin": true},
+        "y": {"aggregate": "count", "type": "quantitative"},
+        "color": {"aggregate": "sum", "field": "Year Constructed",
+            "scale": {"type": "log"}
+        }
+    }
+}
+
